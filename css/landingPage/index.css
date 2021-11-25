@@ -1,0 +1,206 @@
+
+/* Reset css */
+
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+}
+.main_body{
+  background-color: #f6f9fc;
+}
+
+html,body{
+  min-width:100%;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+/* Nav bar */
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: white;
+    height: 40px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+    width: 100%;
+
+
+}
+
+/* Links in nav bar */
+.nav_items {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  transition-duration: .2s;
+
+}
+
+.nav_items:hover {
+  font-size: 20px;
+}
+
+/* call to action button  */
+
+.black_button{
+    margin-top: 50px;
+    width: 25vw;
+    height: 5vh;
+    background: black;
+    border-radius: 20px;
+    transition-duration: .2s;
+
+
+}
+
+.black_button:hover{
+  width: 26vw;
+  height: 6vh;
+  box-shadow: 0 13px 20px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+}
+
+.projectMap_link{
+  text-decoration:none;
+  cursor:pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* div that contains main page content */
+  .main_content {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    width: 100vw;
+  }
+
+  /* Main title  */
+  .title{
+    font-family: 'Playfair Display',serif;
+    color: black;
+    font-size: 2.6em;
+    text-align: center;
+    line-height: 1.15em;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-top: 50px;
+  }
+
+  video {
+    /* override other styles to make responsive */
+    width: 60%    !important;
+    height: auto   !important;
+  }
+  .vid_border{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+/* https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+/* Portrait and Landscape */
+ @media  screen
+  and (min-device-width: 220px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .nav{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+          background-color: white;
+          height: 40px;
+          box-shadow: 0 3px 8px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+          width: 100%;
+      }
+
+      video {
+    width: 100% !important;
+    height: auto !important;
+}
+}
+
+@media  screen
+  and (min-device-width: 813px)
+  and (max-device-width: 1600px)
+    {
+
+  }
+
+.section_seporator{
+  margin: 5vh;
+  height: 2px;
+  background-color: grey;
+  width: 90vw;
+}
+
+.feature_section_header{
+}
+
+.product_features{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    width: 75vw;
+
+}
+.featurebox {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+    transition-property: box-shadow;
+    transition-property: opacity;
+    transition-duration: .2s;
+    transition-timing: ease-out;
+    margin: 20px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+
+.footer{
+  position: relative;
+  margin-top: 5vh;
+  padding-right: 200px;
+  padding-left:  200px;
+  height: 20vh;
+  min-width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -1,0 +1,875 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ForeZite Map </title>
+  <meta name="description" content="General Project Managment Software Application">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="ForeZite">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="General Project Managment Software">
+  <meta property="og:image" content="image.png">
+
+  <link rel="stylesheet" href="css/ProjectMap/project_map.css">
+
+<!-- https://www.svgrepo.com/svg/67631/back-arrow -->
+
+</head>
+
+<body class="main_body" style="margin:0px;">
+
+<div class="project_body">
+  <div  class="project_menu">
+    <!-- logo -->
+      <a href="index.html">
+        <img src="img/ProjectMap/FZ_plain.svg" alt="" class="logo">
+      </a>
+      <div style="margin-top:0px;" class="menu_section"></div>
+
+      <!-- Projects -->
+      <div class="add_project_content" onclick="show_modal({create_project: true})" style="display:flex; flex-direction:column; justify-content:center; align-items: center;" >
+        <div style="display:flex; align-items: center" >
+            <h3 style="width:80px;">Projects</h3>
+            <div class="add_project">
+              <p>+</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- Project Content -->
+
+
+
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items: center;">
+
+
+        <div class="folder">
+          <h2>Main</h2>
+        </div>
+
+        <div id="main_projects_container" class="project_container">
+          <div id="1project_unique_id_project_card"  class="project_card">
+            <div  onclick="toggle_project_sub_phase_container('1project_unique_id')" class="project_arrow_container">
+              <div id ="1project_unique_id_arrow" class="arrow-up"></div>
+            </div>
+            <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              ">
+              Main
+            </p>
+            <div class="project_id">
+              <img height="30px" src="img/ProjectMap/settings.svg" alt="">
+            </div>
+          </div>
+
+          <div id="1project_unique_id_project_sub_phase_container" class="project_sub_phase_container">
+            <div class="project_sub_phase_item">
+              <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              " >Work</p>
+            </div>
+          </div>
+
+          <div id="2project_unique_id_project_card"  class="project_card">
+            <div  onclick="toggle_project_sub_phase_container('2project_unique_id')" class="project_arrow_container">
+              <div id ="2project_unique_id_arrow" class="arrow-up"></div>
+            </div>
+            <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              ">
+              Main
+            </p>
+            <div class="project_id">
+              <img height="30px" src="img/ProjectMap/settings.svg" alt="">
+            </div>
+          </div>
+
+          <div id="2project_unique_id_project_sub_phase_container" class="project_sub_phase_container">
+            <div class="project_sub_phase_item">
+              <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              " >Work</p>
+            </div>
+          </div>
+
+          <div id="3project_unique_id_project_card"  class="project_card">
+            <div  onclick="toggle_project_sub_phase_container('3project_unique_id')" class="project_arrow_container">
+              <div id ="3project_unique_id_arrow" class="arrow-up"></div>
+            </div>
+            <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              ">
+              Main
+            </p>
+            <div class="project_id">
+              <img height="30px" src="img/ProjectMap/settings.svg" alt="">
+            </div>
+          </div>
+
+          <div id="3project_unique_id_project_sub_phase_container" class="project_sub_phase_container">
+            <div class="project_sub_phase_item">
+              <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              " >Work</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="folder">
+          <h2>Shared</h2>
+        </div>
+
+        <div id="shared_project_container" class="project_container">
+          <div id="4project_unique_id_project_card"  class="project_card">
+            <div  onclick="toggle_project_sub_phase_container('4project_unique_id')" class="project_arrow_container">
+              <div id ="4project_unique_id_arrow" class="arrow-up"></div>
+            </div>
+            <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              ">
+              Main
+            </p>
+            <div class="project_id">
+              <img height="30px" src="img/ProjectMap/settings.svg" alt="">
+            </div>
+          </div>
+
+          <div id="4project_unique_id_project_sub_phase_container" class="project_sub_phase_container">
+            <div class="project_sub_phase_item">
+              <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              " >Work</p>
+            </div>
+          </div>
+
+          <div id="5project_unique_id_project_card"  class="project_card">
+            <div  onclick="toggle_project_sub_phase_container('5project_unique_id')" class="project_arrow_container">
+              <div id ="5project_unique_id_arrow" class="arrow-up"></div>
+            </div>
+            <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              ">
+              Main
+            </p>
+            <div class="project_id">
+              <img height="30px" src="img/ProjectMap/settings.svg" alt="">
+            </div>
+          </div>
+
+          <div id="5project_unique_id_project_sub_phase_container" class="project_sub_phase_container">
+            <div class="project_sub_phase_item">
+              <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              " >Work</p>
+            </div>
+          </div>
+
+          <div id="6project_unique_id_project_card"  class="project_card">
+            <div  onclick="toggle_project_sub_phase_container('6project_unique_id')" class="project_arrow_container">
+              <div id ="6project_unique_id_arrow" class="arrow-up"></div>
+            </div>
+            <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              ">
+              Main
+            </p>
+            <div class="project_id">
+              <img height="30px" src="img/ProjectMap/settings.svg" alt="">
+            </div>
+          </div>
+
+          <div id="6project_unique_id_project_sub_phase_container" class="project_sub_phase_container">
+            <div class="project_sub_phase_item">
+              <p style="
+              width: 50%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              " >Work</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+<div class="menu_section"></div>
+
+    <!-- Team -->
+    <div style="display:flex; flex-direction:column; justify-content:center; align-items: center;" >
+      <div class="add_project_content" onclick="show_modal({team_create:true})" style="display:flex; align-items: center" >
+          <h3 style="width:80px;">Teams</h3>
+          <div class="add_project">
+            <p>+</p>
+          </div>
+      </div>
+
+
+      <div id="team_container_elm"  class="person_container">
+        <div class="person_card">
+          <div class="person_id">
+            <p>GO</p>
+          </div>
+          <p style="
+            width: 50%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            ">
+            Gabriel Ogbonnaya
+          </p>
+        </div>
+
+        <div class="person_card">
+          <div class="person_id">
+            <p>GO</p>
+          </div>
+          <p style="
+            width: 50%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            ">
+            Gabriel Ogbonnaya
+          </p>
+        </div>
+
+        <div class="person_card">
+          <div class="person_id">
+            <p>GO</p>
+          </div>
+          <p style="
+            width: 50%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            ">
+            Gabriel Ogbonnaya
+          </p>
+        </div>
+
+
+      </div>
+
+
+    </div>
+<div class="menu_section"></div>
+
+<!-- Team Member-->
+
+  <div  style="display:flex; flex-direction:column; justify-content:center; align-items: center;" >
+        <div  style="display:flex; align-items: center" class="add_project_content"  onclick="show_modal({people_create:true})">
+            <h3 style="width:80px;white-space: nowrap;">People</h3>
+            <div class="add_project">
+              <p>+</p>
+            </div>
+        </div>
+            <!-- Search feild when content passes max height -->
+
+            <div id="person_container_elm" class="person_container">
+              <div class="person_card">
+                <div class="person_id">
+                  <p>GO</p>
+                </div>
+                <p style="
+                  width: 50%;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  ">
+                  Gabriel Ogbonnaya
+                </p>
+              </div>
+
+              <div class="person_card">
+                <div class="person_id">
+                  <p>GO</p>
+                </div>
+                <p style="
+                  width: 50%;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  ">
+                  Gabriel Ogbonnaya
+                </p>
+              </div>
+
+              <div class="person_card">
+                <div class="person_id">
+                  <p>GO</p>
+                </div>
+                <p style="
+                  width: 50%;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  ">
+                  Gabriel Ogbonnaya
+                </p>
+              </div>
+
+
+            </div>
+
+
+
+      </div>
+
+  </div>
+
+<!-- Project map -->
+    <div class="project_map">
+
+            <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+          <div id="modal_error_alert" class="error_modal" onclick="close_error_modal(this) ">
+            <div style="position:relative; width: 100%; height: 100%; display:flex; justify-content:center;">
+
+              <p id="modal_error_alert_error_message">Error Modal</p>
+            </div>
+
+          </div>
+
+
+
+          <span class="close">&times;</span>
+          <!-- confir delete -->
+          <div class="confirmDelete">
+            <h1 style="margin:auto" >Confirm Delete </h1>
+            <h3 id= "delete_header_name" style="margin:auto; margin-top:50px;" >Phase Name</h3>
+            <div style="display:flex; justify-content: space-around; ">
+              <div onclick="close_modal()" class="pblack_button"><p>Cancel</p></div>
+              <div onclick="confirm_delete()" class="pblack_button"><p>Confirm</p></div>
+            </div>
+          </div>
+
+          <!-- add a task modal  -->
+
+          <div class="task_create_edit_modal">
+            <h1 id="task_creation_edit_header" style="margin:auto" >Create Task </h1>
+            <p><b>Task Detail</b></p>
+            <div id="modal_task_detail" data-text="Task Info Here:"contenteditable="true" class="task_input_feild"></div>
+            <p><b>Start Task</b></p>
+
+            <div class="task_start_options">
+
+                    <!-- immidiatley after previous task  -->
+                    <div  style=" display:flex; justify-content: space-between; align-items:center">
+
+                      <label  class="switch ">
+                        <input id="immi_start_task_switch" onchange="choose_task_start_time(this)" type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Immidiatley After Last Phase Task</p>
+
+                    </div>
+                    <!--  time unit after previsus task  -->
+                    <div style="filter: blur(1px); display:flex; justify-content: space-between; align-items:center">
+
+                      <label  class="switch ">
+                        <input id="time_after_prev_task_switch"  onchange="choose_task_start_time(this)"  type="checkbox" >
+                        <span class="slider round"></span>
+                    </label>
+
+                      <div style="display:flex; justify-content: center; align-items:center">
+                        <input id="time_after_prev_task_input" onchange="set_start_time_on_change()" style="width:30px;" type="number" min="1" name="" value="">
+                        <select id="time_after_prev_task_input_unit" onchange="set_start_time_on_change()"  name="time_unit" time>
+                          <option value="min">min(s)</option>
+                          <option value="hour">hour(s)</option>
+                          <option value="day">day(s)</option>
+                          <option value="week">week(s)</option>
+
+                        </select>
+                        <p class="p_after_previous_task" >After Last Phase Task</p>
+                      </div>
+
+
+                    </div>
+
+                    <!-- pick a date  -->
+                    <div  style="filter: blur(1px); display:flex;  justify-content: space-between; align-items:center">
+                        <label class="switch ">
+                          <input id="custom_start_switch"  onchange="choose_task_start_time(this)" type="checkbox" >
+                          <span class="slider round"></span>
+                      </label>
+                      <div style="display:flex; justify-content: center;">
+                        <input id ="custom_task_start_date" class ="date_picker" onchange="set_start_time_on_change()" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2021-12-31">
+                        <input id="custom_task_start_time" style="width:96px;" onchange="set_start_time_on_change()" type="time" id="appt" name="appt"
+                        min="09:00" max="18:00" required>
+                      </div>
+                    </div>
+            </div>
+            <p><b>Duration</b></p>
+              <!-- Duration of task  -->
+              <div style="display:flex; justify-content: center; align-items:center">
+                <input id="task_duration_time_digit" onchange="couple_duration_deadline('duration')" style="width:30px;" type="number" name="" min="1" value="">
+                <select id="task_duration_time_unit" onchange="couple_duration_deadline('duration')" name="time_unit" time>
+                  <option value="min">min(s)</option>
+                  <option value="hour">hour(s)</option>
+                  <option value="day">day(s)</option>
+                  <option value="week">week(s)</option>
+                </select>
+              </div>
+
+            <p><b>Deadline</b></p>
+            <!-- pick a date  -->
+
+            <div  style="display:flex;  justify-content: space-between; align-items:center">
+
+              <div style="display:flex; justify-content: center;">
+
+                <input  disabled  onchange="couple_duration_deadline('deadline')" type="date" id="task_deadline_date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2021-12-31" style="">
+                <input disabled onchange="couple_duration_deadline('deadline')" type="time" id="task_deadline_time" name="appt"min="09:00" max="18:00"  style="width: 96px;"  required style="width:96px;">
+              </div>
+            </div>
+
+            <p><b>Deliverables</b></p>
+            <div id="modal_task_deliverables" data-text="Deliverables Info Here:"contenteditable="true" class="task_input_feild"></div>
+
+            <p><b>Team Members</b> </p>
+            <div  class="team_member_container" >
+              <div class="">
+                <h5 style="text-align: center;" >People</h5>
+                <div class="options_members_list">
+                      <div class="member_option">
+                          <p class="member_option_text"> Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="member_option">
+                          <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="member_option">
+                          <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="member_option">
+                          <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                </div>
+              </div>
+
+              <div class="">
+                <h5 style="text-align: center;" >Team</h5>
+                <div class="options_members_list">
+                      <div class="team_option">
+                          <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                      <div class="team_option">
+                        <p class="member_option_text" > Gabriel Ogbonnay</p>
+                      </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div style="display:flex; justify-content: space-around; width: 100%;">
+              <div onclick="close_modal()" class="pblack_button"><p>Cancel</p></div>
+              <div id="create_task_modal_confirm" onclick="modal_create_task()" class="pblack_button"><p>Create Task</p></div>
+            </div>
+          </div>
+          <!--end add a task modal  -->
+          <!-- add a story modal  -->
+          <div class="story_create_edit_modal">
+            <h1 id="story_creation_edit_header" style="margin:auto" >Create Story </h1>
+            <p> <b> Status</b> </p>
+            <select id="story_status_options">
+
+            </select>
+            <p><b>Story Detail</b></p>
+            <div id="modal_story_detail" data-text="Story Info Here:"contenteditable="true" class="task_input_feild"></div>
+            <p><b>Story Start</b></p>
+            <div style="display:flex; justify-content: center;">
+                        <input id="custom_story_start_date" class="date_picker" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2021-12-31">
+                        <input id="custom_story_start_time" style="width:96px;" type="time" name="appt" min="09:00" max="18:00" required="">
+            </div>
+              <p><b>Story Stop</b></p>
+            <div style="display:flex; justify-content: center;">
+                        <input id="custom_story_end_date" class="date_picker"  type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2021-12-31">
+                        <input id="custom_story_end_time" style="width:96px;" type="time" name="appt" min="09:00" max="18:00" required="">
+            </div>
+            <div style="display:flex; justify-content: space-around; width: 100%;">
+              <div onclick="close_modal()" class="pblack_button"><p>Cancel</p></div>
+              <div onclick="modal_create_story()" class="pblack_button"><p>Create Story</p></div>
+            </div>
+
+          </div>
+          <!-- end a story modal  -->
+
+          <!-- add a phase Modal -->
+          <div class="phase_create_edit_modal">
+            <h1 id="phase_creation_edit_header" style="margin:auto" >Create Phase </h1>
+
+            <p><b>Phase Name</b></p>
+            <input id="modal_phase_name" type="text" name="" value="" placeholder="Phase Name">
+            <p id="sub_phase_modal_header"><b>Sub Phase</b></p>
+            <div  style=" display:flex; justify-content: space-between; align-items:center">
+
+            <label id="sub_phase_modal_switch" class="switch ">
+              <input id="phase_switch" onchange="" type="checkbox" >
+              <span class="slider round"></span>
+          </label>
+        </div>
+
+
+            <div style="display:flex; justify-content: space-around; width: 100%;">
+              <div onclick="close_modal()" class="pblack_button"><p>Cancel</p></div>
+              <div onclick="create_phase()" class="pblack_button"><p>Create Phase</p></div>
+            </div>
+
+          </div>
+          <!-- end a phase Modal -->
+
+          <!-- edit people -->
+          <div class="people_edit_modal">
+              <!-- generarated in options.people_edit -->
+          </div>
+          <!-- end people edit -->
+
+          <!-- edit team  -->
+          <div class="team_edit_modal">
+
+          </div>
+          <!-- edit team -->
+
+          <!-- edit project -->
+          <div class="project_edit_modal">
+
+          </div>
+          <!-- edit project -->
+
+
+
+        </div>
+
+      </div>
+      <div style=" display: flex; flex-direction: column;justify-content: center; position: absolute; top: 7%;left: 50%;transform: translate(-50%, -50%); z-index: 10 ;" >
+
+        <h1 id="project_scheme_title" style=" width: 50vw;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" ></h1>
+        <div style="display:flex">
+          <img id="project_scheme_back" src="img/ProjectMap/backarrow.svg"  onclick="pop_nav_stack()" height="30" width="30"style="visibility: hidden; margin-right: 10px; margin-top:24px;" />
+
+          <img id="subphase_delete"  height="30" width="30" onclick="show_modal({phase_delete:true, delete:true, subphase:true})"   style="visibility: hidden; margin-left: 30px; margin-top:24px;" src="img/ProjectMap/delete.svg" >
+
+        </div>
+
+      </div>
+
+      <div id="user_diplay_message" onclick="hide_user_message_ui()" class="user_diplay_message_content">
+          <p>hello</p>
+      </div>
+
+      <div onclick="toggle_project_options()" class="project_options_button">+</div>
+      <div onclick="toggle_project_menu_width()" class="project_menu_button">Menu</div>
+      <div onclick="toggle_phase_view()" class="project_phase_view_button">Phase View</div>
+      <div onclick="toggle_task_view()" class="project_task_view_button">Task View</div>
+      <div class="project_report_button">Report</div>
+
+      <div id="phase_card" class="card">
+        <div id = "phase_card_phase_menu" class="phase_menu">
+          <img onclick="show_modal({phase_delete:true, delete:true})"  height="20" width="20" src="img/ProjectMap/delete.svg" >
+          <div onclick="show_modal({ add_task:true})" class ="phase_add_task">+</div>
+          <div onclick="show_modal({edit_phase:true})">
+            <img  height="20" width="20" src="img/ProjectMap/edit.svg" >
+          </div>
+          <img onclick="expand_card('phase_card',this)"  height="20" width="20" src="img/ProjectMap/expand.svg" >
+
+        </div>
+
+        <div class="phase_view">
+          <h3>Phase View</h3>
+        </div>
+        <div style="display:flex; align-items: center;">
+          <h3 id="phase_name_card" style="
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                ">Phase name: 48</h3>
+          <!-- max-width: 150px removed the max with from phase header -->
+
+        </div>
+        <div id="phase_task_list_container" class="phase_task_list">
+
+          <div id="1unique_task_id_card" class="task_item">
+
+            <div class="task_container">
+
+              <div class="task_menu">
+                <img onclick="show_modal({task_delete :'task_unique_id',delete:true})" height="20" width="20" src="img/ProjectMap/delete.svg" >
+                <div class="add_story"><p>+</p></div>
+                <img class="task_edit_button" height="20" width="20" src="img/ProjectMap/edit.svg">
+              </div>
+
+              <div style="margin-top:20px" class="task_des">
+                <p><b>Task Details:</b></p>
+                <p style=""> <b>Num:</b> 1</p>
+                <p>Research Finsh The websites</p>
+              </div>
+              <div  class="status">
+                <p> <b>Status:</b></p>
+                <p>Pending</p>
+              </div>
+              <div class="start">
+                <p><b>Start: </b> </p>
+              <p>07/23/21</p>
+            </div>
+              <div class="dur">
+                <p><b>Duration:</b></p>
+                <p> 8 days</p>
+              </div>
+              <div class="task_deadline">
+                <p><b>Deadline: </b></p>
+                <p>07/23/21</p>
+              </div>
+              <div class="task_deliv">
+                <p><b>Deliverables</b></p>
+                <div class="deliverable_container">
+                  <p>Google Doc</p>
+                </div>
+              </div>
+              <div class="task_team_m">
+                <div class="img_list"></div>
+                <p><b>Individuals:</b> </p>
+                <p>12</p>
+              </div>
+
+            </div>
+            <div  onclick="toggle_story_container('1unique_task_id')" class="task_story_arrow">
+              <div id = "1unique_task_id_arrow" class="task_arrow_up" ></div>
+            </div>
+          </div>
+
+          <div id ="1unique_task_id_story_container" class="story_container">
+
+            <div id = "_1_story_id" class="story">
+                  <div class="task_menu">
+                    <img onclick="show_modal({story_delete:_1_story_id,delete:true})"  height="20" width="20" src="img/ProjectMap/delete.svg" >
+                    <img class="task_edit_button" height="20" width="20" src="img/ProjectMap/edit.svg">
+                  </div>
+
+                  <div  class="status">
+                    <p> <b> Task Status:</b></p>
+                    <p>Pending</p>
+                  </div>
+
+                  <div class="start">
+                    <p><b>Start: </b> </p>
+                  <p>07/23/21</p>
+                </div>
+
+                <div class="task_deadline">
+                  <p><b>Stop: </b></p>
+                  <p>07/23/21</p>
+                </div>
+
+                <div style="margin-top:20px" class="task_des">
+                  <p><b>Story Details:</b></p>
+                  <p>Research Finsh The websites</p>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="task_item"></div>
+          <div class="task_item"></div>
+
+        </div>
+
+      </div>
+
+      <div id="task_card"class="card2">
+        <img onclick="expand_card('task_card',this)" style="position: absolute;left: 5%;top: 40px;"  height="20" width="20" src="img/ProjectMap/expand.svg" >
+
+        <div id="task_view_ui_member_menu" class="task_member_menu">
+
+          <div class="team_member_task_option">
+            Bob
+          </div>
+
+          <div class="team_member_task_option">
+            Jim
+          </div>
+
+        </div>
+
+        <div class="phase_view">
+          <h3>Task View</h3>
+        </div>
+        <div style="display:flex; align-items: center;">
+          <h3 id="task_view_ui_task_count" >Task Count: 48</h3>
+
+        </div>
+        <div id="task_view_ui_task_container" class="phase_task_list">
+
+          <div class="task_item">
+
+            <div class="task_container">
+
+              <div class="task_menu">
+                <img onclick="show_modal({task_delete: 'task_unique_id',delete:true})"  height="20" width="20" src="img/ProjectMap/delete.svg" >
+                <div class="add_story"><p>+</p></div>
+                <img class="task_edit_button" height="20" width="20" src="img/ProjectMap/edit.svg">
+              </div>
+
+              <div style="margin-top:20px" class="task_des">
+                <p><b>Task Details:</b></p>
+                <p style=""> <b>Num:</b> 1</p>
+                <p>Research Finsh The websites</p>
+              </div>
+              <div  class="status">
+                <p> <b>Status:</b></p>
+                <p>Pending</p>
+              </div>
+              <div class="start">
+                <p><b>Start: </b> </p>
+              <p>07/23/21</p>
+            </div>
+              <div class="dur">
+                <p><b>Duration:</b></p>
+                <p> 8 days</p>
+              </div>
+              <div class="task_deadline">
+                <p><b>Deadline: </b></p>
+                <p>07/23/21</p>
+              </div>
+              <div class="task_deliv">
+                <p><b>Deliverables</b></p>
+                <div class="deliverable_container">
+                  <p>Google Doc</p>
+                </div>
+              </div>
+              <div class="task_team_m">
+                <div class="img_list"></div>
+                <p><b>Individuals:</b> </p>
+                <p>12</p>
+              </div>
+
+            </div>
+
+            <div  onclick="toggle_story_container('2unique_task_id')" class="task_story_arrow">
+              <div id = "2unique_task_id_arrow" class="task_arrow_up" ></div>
+            </div>
+
+          </div>
+
+          <div id ="2unique_task_id_story_container" class="story_container">
+
+            <div class="story">
+                  <div class="task_menu">
+                    <img onclick="show_modal({story_delete: 'story_unique_id',delete:true})" height="20" width="20" src="img/ProjectMap/delete.svg" >
+                    <img class="task_edit_button" height="20" width="20" src="img/ProjectMap/edit.svg">
+                  </div>
+
+                  <div  class="status">
+                    <p> <b> Task Status:</b></p>
+                    <p>Pending</p>
+                  </div>
+
+                  <div class="start">
+                    <p><b>Start: </b> </p>
+                  <p>07/23/21</p>
+                </div>
+
+                <div class="task_deadline">
+                  <p><b>Stop: </b></p>
+                  <p>07/23/21</p>
+                </div>
+
+                <div style="margin-top:20px" class="task_des">
+                  <p><b>Story Details:</b></p>
+                  <p>Research Finsh The websites</p>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="task_item"></div>
+          <div class="task_item"></div>
+
+        </div>
+
+      </div>
+      <div id="cy"></div>
+      </div>
+    </div>
+
+    <!-- button to bring out menu in phone mode  -->
+
+</div>
+
+
+
+
+<script type="text/javascript" src="js/ProjectMap/cytoscape.min.js"></script>
+<script type="text/javascript" src="js/ProjectMap/projectMap.js"></script>
+<script type="text/javascript" src="js/ProjectMap/util.js"></script>
+<script type="text/javascript" src="js/ProjectMap/ui_creation.js"></script>
+<script type="text/javascript" src="js/ProjectMap/ux.js"></script>
+
+
+</body>
+</html>

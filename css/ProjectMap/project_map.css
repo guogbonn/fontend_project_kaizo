@@ -1,0 +1,1234 @@
+
+.main_body{
+  height: 100%;
+  overflow: hidden;
+}
+
+.project_menu{
+  width: 20vw;
+  height: 100vh;
+  background: white;
+  border-right: solid 1px grey;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .3s;
+
+}
+.project_menu_width_tog{
+  width: 0px;
+}
+.project_body{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project_map{
+  flex-grow: 1;
+  background-color: #f6f9fc;
+  transition: .3s;
+  overflow-x: hidden;
+}
+
+
+.logo{
+  width: 100%;
+  height: 10vh;
+}
+
+.add_project{
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+  cursor: pointer;
+}
+
+.add_project p{
+  color: white;
+
+}
+
+.folder{
+  width: 80%;
+  height: 10;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 13px 10px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.project_container{
+  max-height: 150px;
+  overflow-y: auto;
+  vertical-align: bottom;
+  min-width: 89%;
+  display: list-item;
+
+}
+
+.project_card{
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 53px;
+  border-radius: 5px;
+  box-shadow: 0 3px 1px 0 rgb(0 0 0 / 16%), 0 4px 9px 0 rgb(0 0 0 / 7%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  transition: all 0.3s;
+}
+.project_arrow_container{
+  padding: 25px;
+  transition: all 0.3s;
+}
+
+
+
+.project_id{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.project_sub_phase_container{
+  height: 0px;
+  display: list-item;
+  width: 80%;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.project_sub_phase_item{
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 53px;
+  border-radius: 5px;
+  box-shadow: 0 3px 1px 0 rgb(0 0 0 / 16%), 0 4px 9px 0 rgb(0 0 0 / 7%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 22px;
+  transition: all 0.3s;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+}
+
+.menu_section {
+  margin: auto;
+  margin-top: 5vh;
+  height: 2px;
+  background-color: grey;
+  width: 90%;
+}
+/* .exp{
+  height: 300px;
+} */
+.person_container{
+  max-height: 150px;
+  overflow-y: auto;
+  vertical-align: bottom;
+  min-width: 89%;
+  display: list-item;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person_card{
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 53px;
+  border-radius: 5px;
+  box-shadow: 0 3px 1px 0 rgb(0 0 0 / 16%), 0 4px 9px 0 rgb(0 0 0 / 7%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.person_id{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  margin-left: -10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+#cy {
+  width: 100%;
+  height: 100%;
+
+}
+
+.project_options_button{
+  position:absolute;
+  bottom:10px;
+  right: 4%;
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  background-color:black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  cursor: pointer;
+
+}
+
+.project_menu_button{
+
+  position:absolute;
+  bottom:10px;
+  right: 4%;
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  background-color:black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 19;
+  transition: 0.3s;
+  text-align: center;
+  font-size: x-small;
+  cursor: pointer;
+}
+.project_phase_view_button{
+  position:absolute;
+  bottom:10px;
+  right: 4%;
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  background-color:black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 18;
+  transition: 0.3s;
+  text-align: center;
+  font-size: x-small;
+  cursor: pointer;
+}
+.project_task_view_button{
+  position:absolute;
+  bottom:10px;
+  right: 4%;
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  background-color:black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 17;
+  transition: 0.3s;
+  text-align: center;
+  font-size: x-small;
+  cursor: pointer;
+}
+.project_report_button{
+  position:absolute;
+  bottom:10px;
+  right: 4%;
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  background-color:black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 16;
+  transition: 0.3s;
+  text-align: center;
+  font-size: x-small;
+  cursor: pointer;
+}
+
+
+
+
+.card{
+  position: absolute;
+  bottom: 20px;
+  right: 15%;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 55%;
+  height: 40%;
+  background-color: white;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: 0.3s;
+
+}
+
+.card2{
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  right: 15%;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 55%;
+  height: 40%;
+  background-color: white;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: 0.3s;
+
+
+}
+
+.expand_container{
+  height: 80%;
+}
+
+.phase_view{
+  position: absolute;
+  top: -53px;
+  left: 0;
+}
+
+#phase_name_card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.phase_task_list{
+  height: 100%;
+
+  width: 90%;
+  display: list-item;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.task_item{
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 95%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 10px;
+
+  overflow: hidden;
+
+
+}
+
+.task_container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.delete{
+
+  position: absolute;
+  right: 3%;
+  bottom:  2%;
+}
+
+.phase_menu{
+  position: absolute;
+  left: 3%;
+  top: 1%;
+  height: auto;
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task_member_menu{
+  position: absolute;
+  left: 3%;
+  top: 1%;
+  height: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+.task_member_menu::-webkit-scrollbar {
+        width: 2px;
+    }
+
+.team_member_task_option{
+  height: 20px;
+  width: auto;
+  white-space: nowrap;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.phase_add_task{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+  cursor: pointer;
+  color: white;
+}
+.task_menu{
+  margin: 10px;
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.add_story{
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+  cursor: pointer;
+  color: white;
+}
+
+
+.status{
+  margin-top: 10px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+  flex-direction: column;
+}
+
+.start{
+  margin: 10px;
+  width: auto;
+  height: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+  flex-direction: column;
+}
+
+.dur{
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+  flex-direction: column;
+}
+
+.task_des{
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+}
+.task_team_m{
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+  flex-direction: column;
+}
+
+.task_deliv{
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.task_deadline{
+
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+  flex-direction: column;
+}
+.task_story_arrow{
+  position: absolute;
+  bottom: 1%;
+  left: 5px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+.task_arrow_up{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid white;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.story_container{
+  height:0px;
+  overflow: hidden;
+  transition: all .3s;
+
+}
+
+.story{
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 10px;
+  overflow: hidden;
+  transition: all .3s;
+  background-color: gainsboro;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute;; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error_modal{
+  position: absolute;
+  top: 88vh;
+  left: 15%;
+  visibility: hidden;
+  padding: 10px;
+
+  width: 60%;
+  height: 150px;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 20px;
+
+}
+
+.user_diplay_message_content{
+  position: absolute;
+  top: 88vh;
+  left: 15%;
+  visibility: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+
+  width: 60%;
+  height: 150px;
+  z-index: 100000000;
+  background-color: grey;
+  color: white;
+  border-radius: 20px;
+
+}
+
+.confirmDelete{
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+}
+
+.people_edit_modal{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.team_edit_modal{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.project_edit_modal{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.pblack_button {
+    margin-top: 50px;
+    width: 40%;
+    height: 5vh;
+    background: black;
+    border-radius: 20px;
+    transition-duration: .2s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.phase_create_edit_modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+
+.story_create_edit_modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+
+/* task create edit modal   */
+.task_create_edit_modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+
+}
+
+.task_input_feild{
+  min-height: 200px;
+  width: 60%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+/* slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* task start option */
+.task_start_options{
+  display:flex;
+  flex-direction: column;
+  width:60%;
+}
+
+.date_picker{
+  width: auto;
+}
+
+.p_after_previous_task{
+  width: auto;
+}
+/* Team members */
+.team_member_container{
+
+  width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.options_members_list{
+  width: auto;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+
+
+}
+.options_members_list_team{
+  width: auto;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+.team_option{
+  width: 220px;
+  height: 50px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.member_option{
+  width: 220px;
+  height: 50px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.member_option_edit{
+  width: 220px;
+  height: 50px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.member_option_text{
+  width: 80%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   text-align: center;
+   cursor: pointer;
+}
+
+
+/*
+ *  STYLE 1
+ */
+
+.project_menu::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.project_menu::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.project_menu:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.project_menu::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* project_container */
+
+.project_container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.project_container::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.project_container:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.project_container::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+/* person_container */
+
+.person_container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.person_container::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.person_container:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.person_container::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* phase_task_list */
+
+.phase_task_list::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.phase_task_list::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.phase_task_list:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.phase_task_list::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* options_members_list */
+
+.options_members_list::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.options_members_list::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.options_members_list:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.options_members_list::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* options_members_list_team */
+
+.options_members_list_team::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.options_members_list_team::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.options_members_list_team:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.options_members_list_team::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* project_settings_alert_container */
+.project_settings_alert_container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.project_settings_alert_container::-webkit-scrollbar
+{
+	width: 0px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  transition: all .3s;
+
+}
+.project_settings_alert_container:hover::-webkit-scrollbar
+{
+	width: 10px;
+  background: transparent;  /* Optional: just make scrollbar invisible */
+
+}
+
+.project_settings_alert_container::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
+@media  screen
+ and (min-device-width: 220px)
+ and (max-device-width: 415px)
+ and (-webkit-min-device-pixel-ratio: 2) {
+     .project_menu{
+       /* do not show the menu on small screen due to distortion */
+       width: 0px;
+     }
+     .project_menu_width_tog{
+       width: 70vw;
+       z-index: 40;
+     }
+     .person_container{
+       /* container overflows on mobile this gets rid of the bug*/
+       overflow-y: auto;
+     }
+     .card {
+        width: 60%;
+        overflow-x: hidden;
+        padding: 20px;
+    }
+
+    .card2{
+      width: 60%;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+
+    .status{
+      flex-direction: column;
+    }
+
+    .start{
+      flex-direction: column;
+    }
+
+    .dur{
+      flex-direction: column;
+    }
+
+    .task_des{
+      flex-direction: column;
+
+    }
+    .task_team_m{
+      flex-direction: column;
+
+    }
+
+    .task_deliv{
+      flex-direction: column;
+
+    }
+    .task_deadline{
+      flex-direction: column;
+    }
+
+    .task_menu{
+      width: 90%;
+    }
+    .phase_menu{
+      width: 90%;
+    }
+
+    .expand_container{
+      height: 75%;
+    }
+    .task_start_options{
+      width: 100%;
+    }
+    .team_member_container{
+      width: 70%;
+    }
+    .member_option{
+      width: 100px;
+    }
+    .team_option{
+      width: 100px;
+    }
+    .date_picker{
+      width: 110px;
+    }
+
+    .p_after_previous_task{
+      width: 100px;
+    }
+
+}
